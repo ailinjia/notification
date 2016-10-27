@@ -1,0 +1,150 @@
+.notification {
+    position: absolute;
+    display: table;
+    box-sizing: border-box;
+    border-radius: 900px;
+    transition: opacity .5s ease-out 0s;
+    font-family: 'Microsoft YaHei', 'Arial';
+    z-index: 9;
+}
+.notification > div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.notification .notification_icon {
+    width: 100px;
+    font-size: 36px;
+}
+.notification .notification_icon span {
+    margin: 0 20px;
+    padding-right: 5px;
+    cursor: default;
+    box-shadow: 1px 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.notification .notification_close {
+    width: 60px;
+}
+.notification .notification_close span {
+    margin: 0 10px;
+    border-radius: 200px;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.9);
+}
+.notification .notification_close span i {
+    cursor: pointer;
+}
+.notification .notification_close span i:hover {
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+}
+.notification .notification_content {
+    padding: 20px 20px;
+}
+.notification .notification_content span {
+    line-height: 25px;
+    word-wrap: break-all;
+    color: #493f47;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+}
+.notification .notification_content span .danger {
+    color: #900;
+    font-weight: bold;
+}
+
+/*
+ * TODO: override notification
+ */
+.nf_confirm {
+    border-radius: 6px;
+}
+.nf_confirm .notification_close {
+    vertical-align: text-top;
+}
+.nf_confirm .notification_close span {
+    display: block;
+    margin: 0;
+    padding: 5px 2px 0 0;
+    text-align: right;
+}
+
+/*
+ * buttons
+ */
+.notification .notification_content .nf_button_container {
+    display: block;
+    margin-top: 10px;
+}
+.notification .notification_content .nf_button_container .nf_button {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.nf_button_danger {
+    background-color: #dd6b55;
+    box-shadow: 0 0 2px rgba(221, 107, 85, 0.8), 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+}
+.nf_button_cancel {
+    background-color: #c1c1c1;
+}
+.nf_button_ok {
+    background-color: #8cd4f5;
+    box-shadow: 0 0 2px rgba(140, 212, 245, 0.8), 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+/*
+ * error
+ */
+.notification_error {
+    border: 1px solid #c10036;
+    background: linear-gradient(to bottom, #fccad8 0%, #f192a8 100%);
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.5) inset,
+                0 0 10px 0px #c10036;
+}
+.notification_error div {
+    color: #900;
+}
+.notification_error .notification_icon span {
+    border-right: 1px solid #f48daa;
+}
+
+/*
+ * warning
+ */
+.notification_warning {
+    border: 1px solid #fea000;
+    background: linear-gradient(to bottom, #edecc6 0%, #ecca69 100%);
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.5) inset,
+                0 0 10px 0px #fea000;
+}
+.notification_warning div {
+    color: #d9830a;
+}
+.notification_warning .notification_icon span {
+    border-right: 1px solid #e1cd6c;
+}
+
+/*
+ * success
+ */
+.notification_success {
+    border: 1px solid #a9b465;
+    background: linear-gradient(to bottom, #f0f9cc 0%, #c4d877 100%);
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.5) inset,
+                0 0 10px 0px #a9b465;
+}
+.notification_success div {
+    color: #67811e;
+}
+.notification_success .notification_icon span {
+    border-right: 1px solid #bcd657;
+}
