@@ -1,2 +1,3 @@
 # notification
-A lightweight native js/css notification box
+
+https://raw.githubusercontent.com/ailinjia/notification/master/example.png
