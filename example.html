@@ -10,7 +10,6 @@
 #stage {
     width: 600px;
     height: 200px;
-    background: grey;
 }
     </style>
 </head>
@@ -28,16 +27,15 @@ notification.warning({
 });
 notification.error({
     width: '500px',
-    content: 'Hello World',
+    content: 'Hello World我可以超时自动消失~',
     position: 'bottom-left',
     timeout: 5000,
 });
-
-notification.success('Hello World 1 zzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzz');
-notification.error('Hello World 2 xxxxxxxxxxxxx zzzzzzzzzzzzzzzzzzzzzzzzzzz');
+notification.success('你好！我是一个成功提示框~啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦');
+notification.error('你好！我是一个错误提示框~啦啦啦啦啦啦啦啦啦啦');
 notification.warning({
     width: '500px',
-    content: 'Hello World 3<br>Everything negative is all an opportunity for me to rise.',
+    content: '你好！我是一个警告提示框！！请确认！<br>Everything negative is all an opportunity for me to rise.',
     position: 'bottom-right',
     button: [
         {
